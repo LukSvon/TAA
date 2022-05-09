@@ -1,0 +1,126 @@
+*** Settings ***
+Library     SeleniumLibrary
+
+Resource    keyword.resource
+Resource    variables.resource
+#Resource    locators.resource
+Test Setup      Starting proces
+Test Teardown       Close Browser
+
+*** Test Cases ***
+
+Test Google 1
+    [Tags]      Test1
+    Starting proces
+
+Test Google 2
+    [Tags]      Test2
+    Input Text    ${text}    Apple
+    Search
+    Wait Until Page Contains    Apple
+
+Test Google 3
+    [Tags]      Test 3
+    What Is an Apple
+    Search
+    Check
+
+Test Google 4
+    [Tags]      Test 4
+    What Is an Apple
+    Press Keys    None    ENTER
+    Check
+
+Test Google 5
+    [Tags]      Test 5
+    Yes Papa
+    Press Keys    None    ENTER
+    Wait Until Page Contains Element    //h3[contains(@class,'LC20lb MBeuO')]
+
+Test Google 6
+    [Tags]      Test 6
+    Input Text    ${text}    @#$%^
+    Press Keys    None    ENTER
+#Nefunguje - vyhadzuje mi nejake videa, teda expected result sa neda nasimulovat
+
+Test Google 7
+    [Tags]      Test 7
+    Yes Papa
+    Press Keys    None    ENTER
+#Mozno mi nieco uniklo, takmer identicky test case ako c. 5
+
+Test Google 8
+    [Tags]      Test 8
+    Click Element    (//*[name()='svg'][@class='goxjub'])[1]
+#Mic problems, nasiel som nieco taketo ale neviem to pouzit :D
+#https://stackoverflow.com/questions/53500111/how-to-access-microphonecamera-in-robot-framework
+
+Test Google 9
+    [Tags]      Test 9
+
+#Mic problems same as Test 8
+
+Test Google 10
+    [Tags]      Test 10
+    Login
+    Log    Failed - User cant login
+#Neviem sa prihlasit, pretoze gc mi vyhodi not supported a button try again, ani po tom kliku to nejde
+
+Test Google 11
+    [Tags]      Test 11
+    What Is an Apple
+    Press Keys    None    ENTER
+    Check
+    Clear Element Text    ${clear}
+    Input Text    ${text}    where is a statue of Liberty located
+    Press Keys    None    ENTER
+    Clear Element Text    ${clear}
+    Input Text    ${text}    what is current weather
+    Press Keys    None    ENTER
+    Clear Element Text    ${clear}
+    Click Element    ${text}
+#    Page Should Contain Element    //span[text()='Weather Bratislava 30 days']
+# Tuto neviem skontrolovat historiu, resp. posledne vylistovane, prikazom vyssie som sa snazil skontrolovat text ktory vybehne z dropdownu\
+
+Test Google 12
+    [Tags]      Test 12
+
+Test Google 13
+    [Tags]      Test 13
+    Click Element    //*[@id="SIvCob"]/a
+#Neviem nasimulovat, resp. neviem co sa ocakava od testu
+
+Test Google 14
+    [Tags]      Test 14
+    Page Should Contain    Slovakia
+
+Test Google 15
+    [Tags]      Test 15
+    What Is an Apple
+    Click Element    (//input[@name='btnI'])[2]
+    Wait Until Location Is    https://en.wikipedia.org/wiki/Apple
+
+Test Google 16
+    [Tags]      Test 16
+
+Test Google 17
+    [Tags]      Test 17
+
+Test Google 18
+    [Tags]      Test 18
+
+Test Google 19
+    [Tags]      Test 19
+
+
+
+
+
+
+
+
+
+
+    
+
+
