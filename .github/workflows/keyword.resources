@@ -2,6 +2,10 @@
 Library    SeleniumLibrary
 
 
+# Ako sme si hovorili, robis keywordy, na nieco co je len 1 step
+#  Search, What Is An Apple, Check, Yes Papa...
+#  to nieje to co chces
+
 *** Keywords ***
 Starting proces
     Open Browser    https://www.google.com     gc
@@ -14,6 +18,8 @@ Search
 
 What Is an Apple
     Input Text    //input[@role='combobox']    what is an Apple
+
+
 
 Check
     Wait Until Page Contains    Fruit

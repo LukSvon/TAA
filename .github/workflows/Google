@@ -1,3 +1,6 @@
+# chyba pripona .robot, pre test
+
+
 *** Settings ***
 Library     SeleniumLibrary
 
@@ -9,9 +12,22 @@ Test Teardown       Close Browser
 
 *** Test Cases ***
 
+# preco Test Google 1  robi to iste co Setup?
 Test Google 1
     [Tags]      Test1
     Starting proces
+
+
+
+# v testoch nieco vyhladavas a nieco kontrolujes
+# z tejto urovne, by malo byt jasne o co sa jedna
+
+# bez manualneho testu, netusim co znamena: Check
+# netusim co znamena  "Search", netusim co znamena "What Is An Apple"
+
+# Press Keys    None     ENTER
+#  tu sa da zariadit, aby klaves bol stlaceny s focusom na  input,
+#  to je to co chces vacsinou, aby ten enter nespravil nieco neocakavane
 
 Test Google 2
     [Tags]      Test2
@@ -49,6 +65,9 @@ Test Google 7
     Press Keys    None    ENTER
 #Mozno mi nieco uniklo, takmer identicky test case ako c. 5
 
+
+# ano, treba tam dat fake input
+# na tie buttony nevies pristupit, ktore tam vyskocia.. lebo neisu v ramci webu, ale browsera
 Test Google 8
     [Tags]      Test 8
     Click Element    (//*[name()='svg'][@class='goxjub'])[1]
