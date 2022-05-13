@@ -1,3 +1,0 @@
-*** Variables ***
-${text}    //input[@role='combobox']
-${clear}    //div[@class='a4bIc']//input[1]
