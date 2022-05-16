@@ -10,7 +10,7 @@ Test Teardown       Close Browser
 100 Adding and removing items from cart
     [Documentation]     Test for add 3 grills to cart,
                         ...    check prices & delete products
-    Click Grill & Choose Grill From 50 - 85 €
+    Click section and filter by Grill 50 - 85 €
     Add To Cart Grill Ariete Multi Gril 3v1 1916
     Add To Cart Grill Orava EG-1900
     Add To Cart Grill Fieldmann FZG-1004
