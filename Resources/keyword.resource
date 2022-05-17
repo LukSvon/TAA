@@ -68,7 +68,7 @@ Price Product 1 Should Be From 50 - 90e
     ${check_price}    get text    ${price_grill_1}
     ${check_price}    remove string    ${check_price}   €
     ${check_price}    replace string    ${check_price}    ,    .
-    Should be true    float(${check_price})<85
+    Should be true    float(${check_price})<90
     Should be true    float(${check_price})>50
 
 Price Product 2 Should Be From 50 - 90e
