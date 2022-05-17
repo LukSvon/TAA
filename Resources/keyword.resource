@@ -11,7 +11,7 @@ Open browser & accept cookie
     Click Element    ${cookie}
 
 
-Click section and filter by Grill 50 - 85 €
+Click section and filter by Grill 50 - 90 €
     Click Element    xpath=//h2[text()='Tipy na grilovanie a piknik']
     Click Element    xpath=//a[@data-gtm-event-label='Grily']
     Click Element    //label[@for='price-2']
