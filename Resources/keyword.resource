@@ -15,7 +15,7 @@ Click section and filter by Grill 50 - 85 €
     Click Element    xpath=//h2[text()='Tipy na grilovanie a piknik']
     Click Element    xpath=//a[@data-gtm-event-label='Grily']
     Click Element    //label[@for='price-2']
-    Wait Until Page Contains    Grily 50 – 85 €
+    Wait Until Page Contains    Grily 50 – 90 €
     Sleep    2s
 
 Add To Cart Grill Ariete Multi Gril 3v1 1916
@@ -64,21 +64,21 @@ Delete Item From Cart
     Click Element    ${delete_button}
     Sleep    3s
 
-Price Product 1 Should Be From 50 - 85e
+Price Product 1 Should Be From 50 - 90e
     ${check_price}    get text    ${price_grill_1}
     ${check_price}    remove string    ${check_price}   €
     ${check_price}    replace string    ${check_price}    ,    .
     Should be true    float(${check_price})<85
     Should be true    float(${check_price})>50
 
-Price Product 2 Should Be From 50 - 85e
+Price Product 2 Should Be From 50 - 90e
     ${check_price}    get text    ${price_grill_2}
     ${check_price}    remove string    ${check_price}   €
     ${check_price}    replace string    ${check_price}    ,    .
     Should be true    float(${check_price})<90
     Should be true    float(${check_price})>50
 
-Price Product 3 Should Be From 50 - 85e
+Price Product 3 Should Be From 50 - 90e
     ${check_price}    get text    ${price_grill_2}
     ${check_price}    remove string    ${check_price}   €
     ${check_price}    replace string    ${check_price}    ,    .
